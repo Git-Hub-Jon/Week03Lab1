@@ -11,17 +11,32 @@ import java.io.Serializable;
  * @author 734743
  */
 public class User implements Serializable{
-    private String firstName = "";
-    private String lastName = "";
+    private String userName = "";
+    private String password = "";
     
     public User(){
-        firstName = "";
-        lastName = "";
+        userName = "";
+        password = "";
     }
     
-    public User(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(String userName, String password){
+        this.userName = userName;
+        this.password = password;
     }
     
+    public String getUserName() {
+        return userName;
+    }
+    
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    
+    public String getPassword() {
+        return password;
+    }
+    
+    public void setLastName(String password) {
+        this.password = password;
+    }
 }
